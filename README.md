@@ -17,9 +17,10 @@ Software:
 3) .NET Farmework (Version - 4.7.2)
 
 Installation: 
-1) Unzip the folder containing the windows installer package (.msi) under Releases.
-2) Select directory for installation along with other preferred settings and click Next.
-3) Once the setup has finished installing, click Finish.
+1) Download "CDS.Mapper.v1.0.0.zip" from Releases-> Initial Release -> Assets.
+2) Unzip the folder and run "Setup.msi".
+3) Select directory for installation along with other preferred settings and click Next.
+4) Once the setup has finished installing, click Finish.
 
 Required input files:
 1) List of positions to be queried present on the +strand of the reference genome in BED format (format described in http://genome.ucsc.edu/FAQ/FAQformat#format1)
