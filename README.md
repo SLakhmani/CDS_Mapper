@@ -17,8 +17,9 @@ Software:
 3) .NET Farmework (Version - 4.7.2)
 
 Installation: 
-1) Using the executable available under Releases - Unzip the folder and install into directory of choice.
-2) Can be compiled separately using the .cs files in the repository with the compiler of choice.
+1) Unzip the folder containing the executable installer under Releases.
+2) Select directory for installation along with other preferred settings and click Next.
+3) Once the setup has finished installing, click Finish.
 
 Required input files:
 1) List of positions to be queried present on the +strand of the reference genome in BED format (format described in http://genome.ucsc.edu/FAQ/FAQformat#format1)
