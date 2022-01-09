@@ -17,7 +17,7 @@ Software:
 3) .NET Farmework (Version - 4.7.2)
 
 Installation: 
-1) Unzip the folder containing the executable installer under Releases.
+1) Unzip the folder containing the windows installer package (.msi) under Releases.
 2) Select directory for installation along with other preferred settings and click Next.
 3) Once the setup has finished installing, click Finish.
 
