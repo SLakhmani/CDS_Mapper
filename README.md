@@ -27,4 +27,5 @@ Required input files:
 3) GenBank file with annotated genome (File format: https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html)
 
 Output file formats:
+
 The outputs generated using the application can be exported either as a tab delimited text(.txt) file or as comma-separated values(.CSV). 
