@@ -7,12 +7,12 @@ This application has been specifically written for handling bacterial datasets a
 Tested with the following speficiations: (Note - This is not indicative of the minimum specifications required to run the application)
 
 Hardware:
-1) CPU - AMD Ryzen 5 2600 (3.4 GHz, 6 Cores - 12 Threads)
-2) RAM - Patriot Viper (16 GB, 3000 MHz)
-3) GPU - Nvidia RTX 2070 (8 GB)
+1) CPU - AMD Ryzen 5 2600 (3.4 GHz, 6 Cores - 12 Threads), 11th Gen Intel Core i7-1165G7 (2.8 GHz, 4 Cores, 8 Logical Processors)
+2) RAM - Patriot Viper (16 GB, 3000 MHz), 16GB LPDDR4X
+3) GPU - Nvidia RTX 2070 (8 GB), Intel Iris Xᵉ Graphics
 
 Software:
-1) Operating System - Windows 10 64-bit (Build - 19044.1415)
+1) Operating System - Windows 10 64-bit (Build - 19044.1415), Windows 11 64-bit
 2) IDE - Visual Studio 2019 (Version - 16.7.6)
 3) .NET Farmework (Version - 4.7.2)
 
