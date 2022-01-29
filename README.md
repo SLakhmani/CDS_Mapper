@@ -17,7 +17,7 @@ Software:
 3) .NET Farmework (Version - 4.7.2)
 
 Installation: 
-1) Download "CDS.Mapper.v1.0.0.zip" from Releases-> Initial Release -> Assets.
+1) Download the latest release from Releases under Assets (most recent release appears first).
 2) Unzip the folder and run "Setup.msi".
 3) Select directory for installation along with other preferred settings and click Next.
 4) Once the setup has finished installing, click Finish.
