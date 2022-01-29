@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
@@ -170,7 +170,7 @@ namespace CDS_Mapper
                                     originalGBKTable.Columns.Add(col);
                                     streamDGV[lastColumnIndex + 1, j].Value = currentPosition;
                                     columnCounter++;
-                                    break;
+                                    //break;
                                 }
 
                                 else if (lastColumnIndex - originalLastColumn >= 1)
@@ -185,13 +185,13 @@ namespace CDS_Mapper
                                     }
 
                                     streamDGV[unoccupiedIndex, j].Value = currentPosition;
-                                    break;
+                                    //break;
                                 }
                             }
                             else // not occupied
                             {
                                 streamDGV[6, j].Value = currentPosition;
-                                break;
+                                //break;
                             }
                         }
                     }
