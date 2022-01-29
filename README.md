@@ -17,10 +17,11 @@ Software:
 3) .NET Farmework (Version - 4.7.2)
 
 Installation: 
-1) Download the latest release from Releases under Assets (most recent release appears first).
-2) Unzip the folder and run "Setup.msi".
-3) Select directory for installation along with other preferred settings and click Next.
-4) Once the setup has finished installing, click Finish.
+1) Uninstall any previous releases from the system. 
+2) Download the latest release from Releases under Assets (most recent release appears first).
+3) Unzip the folder and run "Setup.msi".
+4) Select directory for installation along with other preferred settings and click Next.
+5) Once the setup has finished installing, click Finish.
 
 Required input files:
 1) List of positions to be queried present on the +strand of the reference genome in BED format (format described in http://genome.ucsc.edu/FAQ/FAQformat#format1)
