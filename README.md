@@ -28,6 +28,8 @@ Required input files:
 2) List of positions to be queried present on the -ve or complementary strand of reference genome in BED format
 3) GenBank file with annotated genome (File format: https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html)
 
+The BED files MUST provide the first 6 columns of prescribed BED format.
+
 Output file formats:
 
 The outputs generated using the application can be exported either as a tab delimited text(.txt) file or as comma-separated values(.CSV). 
