@@ -1,0 +1,103 @@
+Dim myFile As String, text As String, textline As String, i As Integer
+Dim wbBook As Workbook
+Dim positiveStrandSheet As Worksheet
+Dim negativeStrandSheet As Worksheet
+Dim motifSheet As Worksheet
+Dim startPosArrayPositive()
+Dim startPosArrayNegative()
+Dim position As Long
+Dim finalOutput As String
+Dim k As Integer
+
+Set wbBook = ThisWorkbook
+With wbBook
+    Set positiveStrandSheet = .Worksheets("+ strand")
+    Set negativeStrandSheet = .Worksheets("- strand")
+    Set motifSheet = .Worksheets("Motif output")
+End With
+
+myFile = Application.GetOpenFilename("Text Files (*.txt), *.txt")
+
+'MsgBox "The file opened is " & myFile
+Open myFile For Input As #1
+
+Do Until EOF(1)
+    Line Input #1, textline
+    text = text & textline
+Loop
+
+Close #1
+
+Dim lngCount As Long
+Dim strArray() As String
+
+text = StrConv(text, vbUnicode)
+
+strArray = Split(text, vbNullChar)
+
+
+With positiveStrandSheet
+    positiveStrandCount = .Cells(.Rows.Count, "A").End(xlUp).Row
+    
+    ReDim startPosArrayPositive(positiveStrandCount - 1)
+    
+    j = 0
+
+    For i = 2 To positiveStrandCount
+        startPosArrayPositive(j) = .Cells(i, 3).Value
+        j = j + 1
+    Next i
+
+    j = 0
+       
+    k = 2
+    
+    For i = LBound(startPosArrayPositive) To UBound(startPosArrayPositive) - 1
+        position = startPosArrayPositive(i)
+        position = position - 6
+        For j = position To position + 10
+            finalOutput = finalOutput & strArray(j)
+        Next j
+        Worksheets("Motif output").Cells(k, 1).Value = " + "
+        Worksheets("Motif output").Cells(k, 2).Value = startPosArrayPositive(i)
+        Worksheets("Motif output").Cells(k, 3).Value = finalOutput
+        k = k + 1
+        finalOutput = ""
+    Next i
+    
+    k = 2
+End With
+
+With negativeStrandSheet
+
+    Dim motifRowCount As Double
+    negativeStrandCount = .Cells(.Rows.Count, "A").End(xlUp).Row
+    motifRowCount = Worksheets("Motif output").Cells(.Rows.Count, "A").End(xlUp).Row + 1
+    ReDim startPosArrayNegative(negativeStrandCount - 1)
+    
+    j = 0
+
+    For i = 2 To negativeStrandCount
+        startPosArrayNegative(j) = .Cells(i, 3).Value
+        j = j + 1
+    Next i
+
+    j = 0
+       
+        k = motifRowCount
+    
+    For i = LBound(startPosArrayNegative) To UBound(startPosArrayNegative) - 1
+        position = startPosArrayNegative(i)
+        position = position - 6
+        For j = position To position + 10
+            finalOutput = finalOutput & strArray(j)
+        Next j
+        Worksheets("Motif output").Cells(k, 1).Value = " - "
+        Worksheets("Motif output").Cells(k, 2).Value = startPosArrayNegative(i)
+        Worksheets("Motif output").Cells(k, 3).Value = finalOutput
+        k = k + 1
+        finalOutput = ""
+    Next i
+    
+    k = motifRowCount
+End With
